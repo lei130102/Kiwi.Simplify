@@ -298,6 +298,15 @@
   <data name="informationSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\informationSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KiwiBorderEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiBorderEdge.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiBreadCrumb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiBreadCrumb.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiBreadCrumbItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiBreadCrumbItem.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KiwiButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -310,8 +319,17 @@
   <data name="KiwiCheckButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiCheckButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KiwiCheckedListBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiCheckedListBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KiwiCheckSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiCheckSet.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiColorButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiColorButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiComboBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiComboBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KiwiContextMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiContextMenu.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -334,17 +352,38 @@
   <data name="KiwiContextMenuSeparator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiContextMenuSeparator.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KiwiDataGridView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiDataGridView.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiDateTimePicker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiDateTimePicker.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiDomainUpDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiDomainUpDown.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiDropButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiDropButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KiwiForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiForm.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KiwiGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiGroup.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KiwiGroupBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiGroupBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KiwiGroupPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiGroupPanel.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KiwiHeader" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiHeader.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KiwiHeaderGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiHeaderGroup.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiInputBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiInputBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KiwiLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiLabel.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,11 +391,23 @@
   <data name="KiwiLinkLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiLinkLabel.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KiwiListBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiListBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KiwiManager" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiManager.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="KiwiMaskedTextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiMaskedTextBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiMessageBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiMessageBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KiwiMonthCalendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiMonthCalendar.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiNumericUpDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiNumericUpDown.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KiwiPalette" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiPalette.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -366,6 +417,24 @@
   </data>
   <data name="KiwiRadioButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\ToolboxBitmaps\KiwiRadioButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiSplitContainer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiSplitContainer.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiTaskDialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiTaskDialog.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiTaskDialogCommand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiTaskDialogCommand.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiTextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiTextBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiTreeView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiTreeView.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KiwiWrapLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\ToolboxBitmaps\KiwiWrapLabel.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MdiClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MdiClose.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

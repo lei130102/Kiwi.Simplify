@@ -986,80 +986,80 @@ namespace Kiwi.ComponentFactory.Toolkit
             get { return ((int)(PI.GetKeyState(VK_MENU) & 0x00008000) != 0); }
         }
 
-        ///// <summary>
-        ///// Search the hierarchy of the provided control looking for one that has the focus.
-        ///// </summary>
-        ///// <param name="control">Top of the hierarchy to search.</param>
-        ///// <returns>Control with focus; otherwise null.</returns>
-        //public static Control GetControlWithFocus(Control control)
-        //{
-        //    // Does the provided control have the focus?
-        //    if (control.Focused && !(control is IContainedInputControl))
-        //        return control;
-        //    else
-        //    {
-        //        // Check each child hierarchy in turn
-        //        foreach (Control child in control.Controls)
-        //            if (child.ContainsFocus)
-        //                return GetControlWithFocus(child);
+        /// <summary>
+        /// Search the hierarchy of the provided control looking for one that has the focus.
+        /// </summary>
+        /// <param name="control">Top of the hierarchy to search.</param>
+        /// <returns>Control with focus; otherwise null.</returns>
+        public static Control GetControlWithFocus(Control control)
+        {
+            // Does the provided control have the focus?
+            if (control.Focused && !(control is IContainedInputControl))
+                return control;
+            else
+            {
+                // Check each child hierarchy in turn
+                foreach (Control child in control.Controls)
+                    if (child.ContainsFocus)
+                        return GetControlWithFocus(child);
 
-        //        return null;
-        //    }
-        //}
+                return null;
+            }
+        }
 
-        ///// <summary>
-        ///// Add the provided control to a parent collection.
-        ///// </summary>
-        ///// <param name="parent">Parent control.</param>
-        ///// <param name="c">Control to be added.</param>
-        //public static void AddControlToParent(Control parent, Control c)
-        //{
-        //    Debug.Assert(parent != null);
-        //    Debug.Assert(c != null);
+        /// <summary>
+        /// Add the provided control to a parent collection.
+        /// </summary>
+        /// <param name="parent">Parent control.</param>
+        /// <param name="c">Control to be added.</param>
+        public static void AddControlToParent(Control parent, Control c)
+        {
+            Debug.Assert(parent != null);
+            Debug.Assert(c != null);
 
-        //    // If the control is already inside a control collection, then remove it
-        //    if (c.Parent != null)
-        //        RemoveControlFromParent(c);
+            // If the control is already inside a control collection, then remove it
+            if (c.Parent != null)
+                RemoveControlFromParent(c);
 
-        //    // If the control collection is one of our internal collections...
-        //    if (parent.Controls is KiwiControlCollection)
-        //    {
-        //        // Then must use the internal method for adding a new instance
-        //        KiwiControlCollection cc = (KiwiControlCollection)parent.Controls;
-        //        cc.AddInternal(c);
-        //    }
-        //    else
-        //    {
-        //        // Inside a standard collection, add it the usual way
-        //        parent.Controls.Add(c);
-        //    }
-        //}
+            // If the control collection is one of our internal collections...
+            if (parent.Controls is KiwiControlCollection)
+            {
+                // Then must use the internal method for adding a new instance
+                KiwiControlCollection cc = (KiwiControlCollection)parent.Controls;
+                cc.AddInternal(c);
+            }
+            else
+            {
+                // Inside a standard collection, add it the usual way
+                parent.Controls.Add(c);
+            }
+        }
 
-        ///// <summary>
-        ///// Remove the provided control from its parent collection.
-        ///// </summary>
-        ///// <param name="c">Control to be removed.</param>
-        //public static void RemoveControlFromParent(Control c)
-        //{
-        //    Debug.Assert(c != null);
+        /// <summary>
+        /// Remove the provided control from its parent collection.
+        /// </summary>
+        /// <param name="c">Control to be removed.</param>
+        public static void RemoveControlFromParent(Control c)
+        {
+            Debug.Assert(c != null);
 
-        //    // If the control is inside a parent collection
-        //    if (c.Parent != null)
-        //    {
-        //        // If the control collection is one of our internal collections...
-        //        if (c.Parent.Controls is KiwiControlCollection)
-        //        {
-        //            // Then must use the internal method for adding a new instance
-        //            KiwiControlCollection cc = (KiwiControlCollection)c.Parent.Controls;
-        //            cc.RemoveInternal(c);
-        //        }
-        //        else
-        //        {
-        //            // Inside a standard collection, remove it the usual way
-        //            c.Parent.Controls.Remove(c);
-        //        }
-        //    }
-        //}
+            // If the control is inside a parent collection
+            if (c.Parent != null)
+            {
+                // If the control collection is one of our internal collections...
+                if (c.Parent.Controls is KiwiControlCollection)
+                {
+                    // Then must use the internal method for adding a new instance
+                    KiwiControlCollection cc = (KiwiControlCollection)c.Parent.Controls;
+                    cc.RemoveInternal(c);
+                }
+                else
+                {
+                    // Inside a standard collection, remove it the usual way
+                    c.Parent.Controls.Remove(c);
+                }
+            }
+        }
 
         /// <summary>
         /// Gets the size of the borders requested by the real window.

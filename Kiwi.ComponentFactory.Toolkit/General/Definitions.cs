@@ -1604,5 +1604,144 @@ namespace Kiwi.ComponentFactory.Toolkit
         void SelectParentControl();
     }
     #endregion
+    #region CheckedSelectionMode
+    /// <summary>
+    /// Specifies selection mode of the KiwiCheckedListBox.
+    /// </summary>
+    public enum CheckedSelectionMode
+    {
+        /// <summary>
+        /// No items can be selected.
+        /// </summary>
+        None = 0,
 
+        /// <summary>
+        /// Only one item can be selected.
+        /// </summary>
+        One = 1
+    }
+    #endregion
+    #region IContainedInputControl
+    /// <summary>
+    /// Interface allowing access to the contained input control.
+    /// </summary>
+    public interface IContainedInputControl
+    {
+        /// <summary>
+        /// Gets access to the contained input control.
+        /// </summary>
+        Control ContainedControl { get; }
+    }
+    #endregion
+    #region Enum DataGridViewStyle
+    /// <summary>
+    /// Specifies the data grid view style.
+    /// </summary>
+    [TypeConverter(typeof(DataGridViewStyleConverter))]
+    public enum DataGridViewStyle
+    {
+        /// <summary>
+        /// Specifies a list grid style.
+        /// </summary>
+        List,
+
+        /// <summary>
+        /// Specifies a worksheet grid style.
+        /// </summary>
+        Sheet,
+
+        /// <summary>
+        /// Specifies the first custom grid style.
+        /// </summary>
+        Custom1,
+
+        /// <summary>
+        /// Specifies a mixed set of styles.
+        /// </summary>
+        Mixed,
+    }
+    #endregion
+    #region Enum TaskDialogButtons
+    /// <summary>
+    /// Specifies task dialog buttons.
+    /// </summary>
+    [Flags]
+    public enum TaskDialogButtons
+    {
+        /// <summary>
+        /// Specifies no buttons be shown.
+        /// </summary>
+        None = 0x00,
+
+        /// <summary>
+        /// Specifies the OK button.
+        /// </summary>
+        OK = 0x01,
+
+        /// <summary>
+        /// Specifies the Cancel button.
+        /// </summary>
+        Cancel = 0x02,
+
+        /// <summary>
+        /// Specifies the Yes button.
+        /// </summary>
+        Yes = 0x04,
+
+        /// <summary>
+        /// Specifies the No button.
+        /// </summary>
+        No = 0x08,
+
+        /// <summary>
+        /// Specifies the Retry button.
+        /// </summary>
+        Retry = 0x10,
+
+        /// <summary>
+        /// Specifies the Close button.
+        /// </summary>
+        Close = 0x20,
+    }
+    #endregion
+    #region Enum RelativePositionAlign
+    /// <summary>
+    /// Specifies a relative alignment position.
+    /// </summary>
+    public enum RelativePositionAlign
+    {
+        /// <summary>
+        /// Specifies a relative alignment of near.
+        /// </summary>
+        Near,
+
+        /// <summary>
+        /// Specifies a relative alignment of center.
+        /// </summary>
+        Center,
+
+        /// <summary>
+        /// Specifies a relative alignment of far.
+        /// </summary>
+        Far
+    }
+    #endregion
+
+    #region IKiwiDesignObject
+    /// <summary>
+    /// Exposes interface for visual form to cooperate with a view for composition.
+    /// </summary>
+    public interface IKiwiDesignObject
+    {
+        /// <summary>
+        /// Gets and sets if the object is enabled.
+        /// </summary>
+        bool DesignEnabled { get; set; }
+
+        /// <summary>
+        /// Gets and sets if the object is visible.
+        /// </summary>
+        bool DesignVisible { get; set; }
+    }
+    #endregion
 }

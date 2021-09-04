@@ -16,8 +16,10 @@ namespace Kiwi.ComponentFactory.Toolkit
     /// <summary>
     /// Base class used for implementation of actual controls.
     /// </summary>
+    //System.Runtime.InteropServices
     [ClassInterface(ClassInterfaceType.AutoDispatch)]
     [ComVisible(true)]
+    //System.ComponentModel
     [ToolboxItem(false)]
     [DesignerCategory("code")]
     public abstract class VisualControlBase : Control, IKiwiDebug
@@ -83,14 +85,17 @@ namespace Kiwi.ComponentFactory.Toolkit
             #endregion
 
             // We use double buffering to reduce drawing flicker
+            // 使用双缓冲减少绘制闪烁
             SetStyle(ControlStyles.OptimizedDoubleBuffer |
                      ControlStyles.AllPaintingInWmPaint |
                      ControlStyles.UserPaint, true);
 
             // We need to repaint entire control whenever resized
+            // 只要控件大小改变，就需要重绘整个控件
             SetStyle(ControlStyles.ResizeRedraw, true);
 
             // Yes, we want to be drawn double buffered by default
+            // 默认使用辅助缓冲区重绘其图面
             DoubleBuffered = true;
 
             // Setup the invokes

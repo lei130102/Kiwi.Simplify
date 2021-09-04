@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1BF2869-DE2D-4B0D-BF1F-C07B1F88E9DF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kiwi.ComponentFactory.Ribbon</RootNamespace>
+    <AssemblyName>Kiwi.ComponentFactory.Ribbon</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>StrongKiwi.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonSpec\ButtonSpecAppMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpec\ButtonSpecExpandRibbon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpec\ButtonSpecManagerLayoutAppButton.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecManagerLayoutRibbon.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecMdiChildClose.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpec\ButtonSpecMdiChildFixed.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpec\ButtonSpecMdiChildMin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpec\ButtonSpecMdiChildRestore.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpec\ButtonSpecMinimizeRibbon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpec\ButtonSpecViewAppButton.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecViewRibbon.cs" />
+    <Compile Include="Controller\AppButtonController.cs" />
+    <Compile Include="Controller\AppTabController.cs" />
+    <Compile Include="Controller\ButtonSpecAppButtonController.cs" />
+    <Compile Include="Controller\ButtonSpecRibbonController.cs" />
+    <Compile Include="Controller\CollapsedGroupController.cs" />
+    <Compile Include="Controller\ComboBoxController.cs" />
+    <Compile Include="Controller\ContextClickController.cs" />
+    <Compile Include="Controller\ContextTitleController.cs" />
+    <Compile Include="Controller\CustomControlController.cs" />
+    <Compile Include="Controller\DateTimePickerController.cs" />
+    <Compile Include="Controller\DialogLauncherButtonController.cs" />
+    <Compile Include="Controller\DomainUpDownController.cs" />
+    <Compile Include="Controller\GalleryButtonController.cs" />
+    <Compile Include="Controller\GalleryController.cs" />
+    <Compile Include="Controller\GalleryItemController.cs" />
+    <Compile Include="Controller\GroupButtonController.cs" />
+    <Compile Include="Controller\GroupCheckBoxController.cs" />
+    <Compile Include="Controller\GroupRadioButtonController.cs" />
+    <Compile Include="Controller\LeftDownButtonController.cs" />
+    <Compile Include="Controller\LeftUpButtonController.cs" />
+    <Compile Include="Controller\MaskedTextBoxController.cs" />
+    <Compile Include="Controller\NullController.cs" />
+    <Compile Include="Controller\NumericUpDownController.cs" />
+    <Compile Include="Controller\QATButtonController.cs" />
+    <Compile Include="Controller\QATExtraButtonController.cs" />
+    <Compile Include="Controller\RecentDocController.cs" />
+    <Compile Include="Controller\RepeatButtonController.cs" />
+    <Compile Include="Controller\RibbonTabController.cs" />
+    <Compile Include="Controller\RibbonTabsController.cs" />
+    <Compile Include="Controller\RichTextBoxController.cs" />
+    <Compile Include="Controller\TextBoxController.cs" />
+    <Compile Include="Controller\TrackBarController.cs" />
+    <Compile Include="Controller\ViewHightlightController.cs" />
+    <Compile Include="Controls Ribbon\KiwiGallery.cs" />
+    <Compile Include="Controls Ribbon\KiwiGalleryRange.cs" />
+    <Compile Include="Controls Ribbon\KiwiGalleryRangeCollection.cs" />
+    <Compile Include="Controls Ribbon\KiwiRibbon.cs" />
+    <Compile Include="Controls Ribbon\KiwiRibbonContext.cs" />
+    <Compile Include="Controls Ribbon\KiwiRibbonContextCollection.cs" />
+    <Compile Include="Controls Ribbon\KiwiRibbonGroup.cs" />
+    <Compile Include="Controls Ribbon\KiwiRibbonGroupCollection.cs" />
+    <Compile Include="Controls Ribbon\KiwiRibbonQATButton.cs" />
+    <Compile Include="Controls Ribbon\KiwiRibbonQATButtonCollection.cs" />
+    <Compile Include="Controls Ribbon\KiwiRibbonRecentDoc.cs" />
+    <Compile Include="Controls Ribbon\KiwiRibbonRecentDocCollection.cs" />
+    <Compile Include="Controls Ribbon\KiwiRibbonTab.cs" />
+    <Compile Include="Controls Ribbon\KiwiRibbonTabCollection.cs" />
+    <Compile Include="Controls Visuals\KeyTipControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls Visuals\VisualPopupAppMenu.cs" />
+    <Compile Include="Controls Visuals\VisualPopupGroup.cs" />
+    <Compile Include="Controls Visuals\VisualPopupMinimized.cs" />
+    <Compile Include="Controls Visuals\VisualPopupQATOverflow.cs" />
+    <Compile Include="EventArgs\GalleryDropMenuEventArgs.cs" />
+    <Compile Include="General\AppButtonMenuProvider.cs" />
+    <Compile Include="General\CalculatedValues.cs" />
+    <Compile Include="General\Definitions.cs" />
+    <Compile Include="General\DesignTimeDraw.cs" />
+    <Compile Include="General\ItemGroupSizeWidth.cs" />
+    <Compile Include="General\KeyTipInfo.cs" />
+    <Compile Include="General\PlatformInvoke.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupButton.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupCheckBox.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupCluster.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupClusterButton.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupClusterCollection.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupClusterColorButton.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupColorButton.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupComboBox.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupContainer.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupContainerCollection.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupCustomControl.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupDateTimePicker.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupDomainUpDown.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupGallery.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupItem.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupLabel.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupLines.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupLinesCollection.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupMaskedTextBox.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupNumericUpDown.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupRadioButton.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupRichTextBox.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupSeparator.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupTextBox.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupTrackBar.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupTriple.cs" />
+    <Compile Include="Group Contents\KiwiRibbonGroupTripleCollection.cs" />
+    <Compile Include="Palette\AppButtonToolTipToContent.cs" />
+    <Compile Include="Palette\ApplicationTabToContent.cs" />
+    <Compile Include="Palette\ContextTabSet.cs" />
+    <Compile Include="Palette\ContextToContent.cs" />
+    <Compile Include="Palette\DesignTextToContent.cs" />
+    <Compile Include="Palette\GroupItemToolTipToContent.cs" />
+    <Compile Include="Palette\PaletteCaptionRedirect.cs" />
+    <Compile Include="Palette\PaletteGalleryBackBorder.cs" />
+    <Compile Include="Palette\PaletteGalleryRedirect.cs" />
+    <Compile Include="Palette\PaletteGalleryState.cs" />
+    <Compile Include="Palette\PaletteRedirectRibbonAeroOverride.cs" />
+    <Compile Include="Palette\PaletteRibbonAppButton.cs" />
+    <Compile Include="Palette\PaletteRibbonAppGroupTab.cs" />
+    <Compile Include="Palette\PaletteRibbonContextBack.cs" />
+    <Compile Include="Palette\PaletteRibbonContextDouble.cs" />
+    <Compile Include="Palette\PaletteRibbonDisabled.cs" />
+    <Compile Include="Palette\PaletteRibbonFocus.cs" />
+    <Compile Include="Palette\PaletteRibbonGroupAreaTab.cs" />
+    <Compile Include="Palette\PaletteRibbonGroupTab.cs" />
+    <Compile Include="Palette\PaletteRibbonImages.cs" />
+    <Compile Include="Palette\PaletteRibbonJustGroup.cs" />
+    <Compile Include="Palette\PaletteRibbonJustTab.cs" />
+    <Compile Include="Palette\PaletteRibbonNormal.cs" />
+    <Compile Include="Palette\PaletteRibbonRedirect.cs" />
+    <Compile Include="Palette\PaletteRibbonStyles.cs" />
+    <Compile Include="Palette\QATButtonToContent.cs" />
+    <Compile Include="Palette\QATButtonToolTipToContent.cs" />
+    <Compile Include="Palette\RibbonAppButton.cs" />
+    <Compile Include="Palette\RibbonGroupLabelTextToContent.cs" />
+    <Compile Include="Palette\RibbonGroupNormalDisabledTextToContent.cs" />
+    <Compile Include="Palette\RibbonGroupTextToContent.cs" />
+    <Compile Include="Palette\RibbonRecentDocsEntryToContent.cs" />
+    <Compile Include="Palette\RibbonRecentDocsShortcutToContent.cs" />
+    <Compile Include="Palette\RibbonRecentDocsTitleToContent.cs" />
+    <Compile Include="Palette\RibbonShortcuts.cs" />
+    <Compile Include="Palette\RibbonStrings.cs" />
+    <Compile Include="Palette\RibbonTabToContent.cs" />
+    <Compile Include="Palette\RibbonToContent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Ribbon\KiwiGalleryActionList.cs" />
+    <Compile Include="Ribbon\KiwiGalleryDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonActionList.cs" />
+    <Compile Include="Ribbon\KiwiRibbonDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupButtonDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupCheckBoxDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupClusterButtonDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupClusterCollectionEditor.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupClusterColorButtonDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupClusterDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupColorButtonDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupComboBoxDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupContainerCollectionEditor.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupCustomControlDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupDateTimePickerDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupDomainUpDownDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupGalleryDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupLabelDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupLinesCollectionEditor.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupLinesDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupMaskedTextBoxDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupNumericUpDownDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupRadioButtonDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupRichTextBoxDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupSeparatorDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupTextBoxDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupTrackBarDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupTripleCollectionEditor.cs" />
+    <Compile Include="Ribbon\KiwiRibbonGroupTripleDesigner.cs" />
+    <Compile Include="Ribbon\KiwiRibbonQATButtonCollectionEditor.cs" />
+    <Compile Include="Ribbon\KiwiRibbonRecentDocCollectionEditor.cs" />
+    <Compile Include="Ribbon\KiwiRibbonTabDesigner.cs" />
+    <Compile Include="View Base\ViewRibbonManager.cs" />
+    <Compile Include="View Base\ViewRibbonMinimizedManager.cs" />
+    <Compile Include="View Base\ViewRibbonPopupGroupManager.cs" />
+    <Compile Include="View Base\ViewRibbonQATOverflowManager.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonAppButton.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonAppMenu.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonAppMenuDocs.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonAppMenuInner.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonAppMenuOuter.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonAppMenuRecentDec.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonAppTab.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonCaptionArea.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonCompoRightBorder.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonComposition.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonContextTitle.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonDesignBase.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonDesignCluster.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonDesignGroup.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonDesignGroupContainer.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonDesignGroupLines.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonDesignGroupTriple.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonDesignTab.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonDropArrow.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGalleryButton.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGalleryItem.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroup.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupButton.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupButtonBackBorder.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupButtonImage.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupButtonText.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupCheckBox.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupCheckBoxImage.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupCheckBoxText.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupClusterButton.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupClusterButtonImage.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupClusterButtonText.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupClusterColorButton.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupClusterColorButtonImage.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupClusterColorButtonText.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupClusterEdge.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupClusterSeparator.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupColorButton.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupColorButtonImage.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupColorButtonText.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupComboBox.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupCustomControl.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupDateTimePicker.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupDialogButton.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupDomainUpDown.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupGallery.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupGalleryImage.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupGalleryText.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupImage.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupImageBase.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupLabel.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupLabelImage.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupLabelText.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupMaskedTextBox.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupNumericUpDown.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupRadioButton.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupRadioButtonImage.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupRadioButtonText.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupRichTextBox.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupsBorder.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupsBorderSynch.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupSeparator.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupText.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupTextBox.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupTitle.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonGroupTrackBar.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonKeyTip.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonMinimizeBar.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonPanel.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonQATBorder.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonQATButton.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonQATExtraButton.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonQATExtraButtonMini.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonQATOverflow.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonRecentDocs.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonRecentShortcut.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonScrollButton.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonTab.cs" />
+    <Compile Include="View Draw\ViewDrawRibbonTabSep.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonAppButton.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonAppTab.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonCenter.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonCenterPadding.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonCheckBox.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonContextTitles.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonGalleryButtons.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonGalleryItems.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonGroupButton.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonGroupCluster.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonGroupContent.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonGroupLines.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonGroups.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonGroupsArea.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonGroupTriple.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonPadding.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonQATContents.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonQATFromOverflow.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonQATFromRibbon.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonQATMini.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonRadioButton.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonRowCenter.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonScroller.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonScrollPort.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonSeparator.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonTabs.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonTabsArea.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonTabsSpare.cs" />
+    <Compile Include="View Layout\ViewLayoutRibbonTitle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppButtonDefault.png" />
+    <None Include="StrongKiwi.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiGallery.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiGalleryRange.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbon.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonContext.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroup.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupCheckBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupCluster.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupClusterButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupClusterColorButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupColorButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupComboBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupCustomControl.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupDateTimePicker.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupDomainUpDown.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupLabel.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupLines.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupMaskedTextBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupNumericUpDown.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupRadioButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupRichTextBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupSeparator.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupTextBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupTrackBar.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonGroupTriple.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonQATButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonRecentDoc.png" />
+    <EmbeddedResource Include="ToolboxBitmaps\KiwiRibbonTab.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonColorImageLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonColorImageSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonImageLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonImageSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonNoColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CF_logo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroupImageDefault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoveFirst.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoveLast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoveNext.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MovePrevious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QATButtonDefault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kiwi.ComponentFactory.Toolkit\Kiwi.ComponentFactory.Toolkit.csproj">
+      <Project>{20c5fcb4-b56c-45ce-8549-25b780d2eabf}</Project>
+      <Name>Kiwi.ComponentFactory.Toolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -873,6 +873,36 @@ namespace Kiwi.ComponentFactory.Toolkit.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap KiwiBorderEdge {
+            get {
+                object obj = ResourceManager.GetObject("KiwiBorderEdge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiBreadCrumb {
+            get {
+                object obj = ResourceManager.GetObject("KiwiBreadCrumb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiBreadCrumbItem {
+            get {
+                object obj = ResourceManager.GetObject("KiwiBreadCrumbItem", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap KiwiButton {
             get {
                 object obj = ResourceManager.GetObject("KiwiButton", resourceCulture);
@@ -913,9 +943,39 @@ namespace Kiwi.ComponentFactory.Toolkit.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap KiwiCheckedListBox {
+            get {
+                object obj = ResourceManager.GetObject("KiwiCheckedListBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap KiwiCheckSet {
             get {
                 object obj = ResourceManager.GetObject("KiwiCheckSet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiColorButton {
+            get {
+                object obj = ResourceManager.GetObject("KiwiColorButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiComboBox {
+            get {
+                object obj = ResourceManager.GetObject("KiwiComboBox", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -993,6 +1053,46 @@ namespace Kiwi.ComponentFactory.Toolkit.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap KiwiDataGridView {
+            get {
+                object obj = ResourceManager.GetObject("KiwiDataGridView", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiDateTimePicker {
+            get {
+                object obj = ResourceManager.GetObject("KiwiDateTimePicker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiDomainUpDown {
+            get {
+                object obj = ResourceManager.GetObject("KiwiDomainUpDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiDropButton {
+            get {
+                object obj = ResourceManager.GetObject("KiwiDropButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap KiwiForm {
             get {
                 object obj = ResourceManager.GetObject("KiwiForm", resourceCulture);
@@ -1013,6 +1113,16 @@ namespace Kiwi.ComponentFactory.Toolkit.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap KiwiGroupBox {
+            get {
+                object obj = ResourceManager.GetObject("KiwiGroupBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap KiwiGroupPanel {
             get {
                 object obj = ResourceManager.GetObject("KiwiGroupPanel", resourceCulture);
@@ -1023,9 +1133,29 @@ namespace Kiwi.ComponentFactory.Toolkit.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap KiwiHeader {
+            get {
+                object obj = ResourceManager.GetObject("KiwiHeader", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap KiwiHeaderGroup {
             get {
                 object obj = ResourceManager.GetObject("KiwiHeaderGroup", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiInputBox {
+            get {
+                object obj = ResourceManager.GetObject("KiwiInputBox", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1053,6 +1183,16 @@ namespace Kiwi.ComponentFactory.Toolkit.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap KiwiListBox {
+            get {
+                object obj = ResourceManager.GetObject("KiwiListBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap KiwiManager {
             get {
                 object obj = ResourceManager.GetObject("KiwiManager", resourceCulture);
@@ -1063,9 +1203,39 @@ namespace Kiwi.ComponentFactory.Toolkit.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap KiwiMaskedTextBox {
+            get {
+                object obj = ResourceManager.GetObject("KiwiMaskedTextBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiMessageBox {
+            get {
+                object obj = ResourceManager.GetObject("KiwiMessageBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap KiwiMonthCalendar {
             get {
                 object obj = ResourceManager.GetObject("KiwiMonthCalendar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiNumericUpDown {
+            get {
+                object obj = ResourceManager.GetObject("KiwiNumericUpDown", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1096,6 +1266,66 @@ namespace Kiwi.ComponentFactory.Toolkit.Properties {
         internal static System.Drawing.Bitmap KiwiRadioButton {
             get {
                 object obj = ResourceManager.GetObject("KiwiRadioButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiSplitContainer {
+            get {
+                object obj = ResourceManager.GetObject("KiwiSplitContainer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiTaskDialog {
+            get {
+                object obj = ResourceManager.GetObject("KiwiTaskDialog", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiTaskDialogCommand {
+            get {
+                object obj = ResourceManager.GetObject("KiwiTaskDialogCommand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiTextBox {
+            get {
+                object obj = ResourceManager.GetObject("KiwiTextBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiTreeView {
+            get {
+                object obj = ResourceManager.GetObject("KiwiTreeView", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap KiwiWrapLabel {
+            get {
+                object obj = ResourceManager.GetObject("KiwiWrapLabel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -11,19 +11,24 @@ using System.Windows.Forms;
 
 namespace Kiwi.ComponentFactory.Toolkit
 {
-    //System.Windows.Forms.Label所指名的
+    /// <summary>
+    /// Display text and images with the styling features of the Kiwi Toolkit
+    /// 
+    /// System.Windows.Forms.Label 派生自 System.Windows.Forms.Control
+    /// </summary>
+    //System.Runtime.InteropServices
     [ClassInterface(ClassInterfaceType.AutoDispatch)]
     [ComVisible(true)]
+    //System.ComponentModel
     [DefaultBindingProperty("Text")]
     [DefaultProperty("Text")]
+    [DefaultEvent("Paint")]
     [Designer("Kiwi.ComponentFactory.Toolkit.KiwiLabelDesigner, Kiwi.ComponentFactory.Toolkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=360f304a9e10e704")]
     [ToolboxItem(true)]
-    //其他
-    [ToolboxBitmap(typeof(KiwiLabel), "ToolboxBitmaps.KiwiLabel.bmp")]
-    [DefaultEvent("Paint")]
     [DesignerCategory("code")]
     [Description("Displays descriptive information.")]
-    //System.Windows.Forms.Label 派生自 System.Windows.Forms.Control
+    //System.Drawing
+    [ToolboxBitmap(typeof(KiwiLabel), "ToolboxBitmaps.KiwiLabel.bmp")]
     public class KiwiLabel : VisualSimpleBase, IContentValues
     {
         #region Instance Fields
