@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE1157A7-824B-4D70-AAE8-B5248180FA08}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Outlook_Mail_Clone</RootNamespace>
+    <AssemblyName>Outlook Mail Clone</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kiwi.ComponentFactory.Ribbon\Kiwi.ComponentFactory.Ribbon.csproj">
+      <Project>{e1bf2869-de2d-4b0d-bf1f-c07b1f88e9df}</Project>
+      <Name>Kiwi.ComponentFactory.Ribbon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kiwi.ComponentFactory.Toolkit\Kiwi.ComponentFactory.Toolkit.csproj">
+      <Project>{20c5fcb4-b56c-45ce-8549-25b780d2eabf}</Project>
+      <Name>Kiwi.ComponentFactory.Toolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AllBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplyStyles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenuClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenuDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenuMemoStyle.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenuMove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenuNewMailMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenuPrint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenuPrintPreview.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenuPrintStyles.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenuProperties.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenuQuickPrint.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenuSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenuSaveAs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AppMenuSendMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookmarkLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BookmarkSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BordersAndShading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BottomBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BottomBorder1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BrowseThemesSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChangeStyles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChartLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChartSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClipArtLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClipboardCopy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClipboardCut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClipboardFormatPainter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClipboardPaste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClipboardPasteSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClipboardPasteSpecial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CodeMacros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CodeVisualBasic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColorsSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DateTimeSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelayDeliveryLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelayDeliverySmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiagonalDownBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DiagonalUpBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DirectRepliesToLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DrawingCanvasSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DropCapSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EffectsSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EquationLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EquationSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExcelSpreadsheetSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FieldsSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindReplaceSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FollowUp.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FollowUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontsSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDesignAForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormDesignThisForm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormPublish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormPublishSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HelpSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HorizontalLineLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HorizontalLineSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HorizontalLineSmall1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTMLSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HyperlinkLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HyperlinkSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IncludeAttachFile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IncludeAttachFileSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IncludeAttachItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IncludeAttachItemSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IncludeBusinessCard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IncludeBusinessCardSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IncludeCalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IncludeCalendarSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IncludeSignature.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IncludeSignatureSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsideBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsideHorzBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsideVertBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LeftBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LineSpacing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoreOptionsSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultiLevelList.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NamesAddressBook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NamesCheckNames.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NamesGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ObjectSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OptionsFollowUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OptionsFollowUpSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OptionsHighImportance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OptionsLowImportance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OptionsReminder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OptionsToday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OptionsTomorrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OptionsWeek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OtherFolderSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OutsideBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageColorLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PicturesLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlainTextSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProofingResearchSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProofingSetLanguageSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProofingSpelling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProofingSpellingSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProofingThesaurusSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProofingTranslateSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProofingTransScreentipSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProofingWordCountSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QATDeleteSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QATForwardSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QATQuickPrintSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QATRedoSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QATSaveSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QATUndoSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuickPartsLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuickPartsSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuickStyles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RichTextSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveSentItemLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveThemesSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SelectSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SendMail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SendRepliesToSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShapesLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShapesSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowBccLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowFromLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmartArtLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmartArtSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SortAscending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpacingDouble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpacingOne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpacingOneHalf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpacingParagraph.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StyleSet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SymbolLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SymbolSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableDrawSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TablesLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextAlignCenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextAlignLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextAlignRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextBackColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextBold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextBoxLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextBoxSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextBulletNumbers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextBulletPoints.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextChangeCase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextColor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextFontLarger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextFontSmaller.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextItalics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextJustify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextRubout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextShowHideMarkup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextStrikeout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextSubscript.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextSuperscript.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextTabLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextTabRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextUnderline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThemesLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThemesSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TopBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrackingSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UseVotingButtonsLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewGridlines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WordArtLarge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WordArtSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomLarge.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
